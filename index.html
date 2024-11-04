@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZeroJoon2</title>
     <style>
+
         body {
             background-color: black;
             color: black;
@@ -24,14 +25,28 @@
 
         .text{
             margin-left : 50px;
-
         }
         
+        .color_font{
+            color: #ff7373;
+            text-shadow:
+                1px 3px 0px black,
+                -1px 1.5px 0px black,
+                1px -1.5px 0px black,
+                -1px -1px 0px black;
+        }
+
 
         .details{
             margin-left: 50px;
-
+            margin-bottom : 30px;
+            font-size: 18px;
         }
+
+        .bullet_changed_list{
+            list-style-type: "🎁";
+        }
+
         .main_header h1{
             background-color: #ff7373;
             color: white;
@@ -48,18 +63,28 @@
         .image-container{
             display: flex;
             justify-content: center;
-            gap : 90px;
+            gap : 120px;
+            overflow: hidden;
         }
+        
         #profile {
-            width : 180px;
-            height : 240px;
+            width : 150px;
+            height : 200px;
             display: inline-block;
-
+            transition: transform 0.5s ease;
         }
 
+        #profile:hover{
+            transform : scale(180%);
+            
+        }
+        
         .header{
+            margin-top: 10px;
+            margin-bottom: 10px;
             color: hsl(0, 100%, 73%);
             display : block;
+            font-size: 25px;
             text-shadow: 
                 1px 3px 0px black,  /* 오른쪽 아래 */
                 -1px 1.5px 0px black, /* 왼쪽 아래 */
@@ -71,13 +96,12 @@
             color: rgb(86, 117, 255);
         }
         .table_all{
-            
             width: 95%;
             border-collapse: collapse;
         }
 
         .table_all th, .table_rows td{
-            border: 2px solid;
+            border: 1px solid;
             border-color: hsl(0, 100%, 73%);
             border-radius: 10px;
             text-align: center;
@@ -108,16 +132,18 @@
         <div class = 'text'>
             <h2 class = 'header'>🤷‍♀️ 한 줄 소개</h2>
                 <div class = details>
-                    저는 <strong>Python</strong>으로 <strong>데이터 분석</strong>을 잘하는 <strong>최영준</strong>입니다. <a id = 'notion_link' href = 'https://ymjoon2.notion.site/27cc0a25eda3440d816f092a4a06e002' target="_blank"><strong>✅더 자세히 알아보기(Notion)✅</strong></a>
+                    저는 <strong class = 'color_font'>Python</strong>으로 <strong class = 'color_font'>데이터 분석</strong>을 잘하는 <strong>최영준</strong>입니다. <a id = 'notion_link' href = 'https://ymjoon2.notion.site/27cc0a25eda3440d816f092a4a06e002' target="_blank"><strong>✅더 자세히 알아보기(Notion)✅</strong></a>
                 </div>
             
             <h2 class = 'header'>🤷‍♀️ 현재 관심사</h2>
-                <div class = 'details'>
-                    <li>python</li>
-                    <li>데이터 분석</li>
-                    <li>BI 시각화</li>
-                    <li>통계</li>
-                </div>
+                <ui class = 'bullet_changed_list'>
+                    <div class = 'details'>
+                        <li>python</li>
+                        <li>데이터 분석</li>
+                        <li>BI 시각화</li>
+                        <li>통계</li>
+                    </div>
+                </ui>
 
             <h2 class = 'header'>
                 🤷‍♀️ 인생 목표
@@ -155,7 +181,7 @@
                         </tr>
                     </table>
                 </div>
-
+<!--
                 <h2 class = 'header'>
                     🤷‍♀️ 주요 커리어
                 </h2>
@@ -196,7 +222,8 @@
                     </div>    
                         
             </div>
-        
+        -->
     </div>   
+    
 </body>
 </html>
