@@ -45,6 +45,7 @@
 
         .bullet_changed_list{
             list-style-type: "🎁";
+            padding-left: 20px;
         }
 
         .main_header h1{
@@ -67,14 +68,14 @@
             overflow: hidden;
         }
         
-        #profile {
+        .profile {
             width : 150px;
             height : 200px;
             display: inline-block;
             transition: transform 0.5s ease;
         }
 
-        #profile:hover{
+        .profile:hover{
             transform : scale(180%);
             
         }
@@ -125,25 +126,26 @@
             <h1> 안녕하세요 반갑습니다🙌</h1>
         </div>
         <div class = image-container>
-            <img id = 'profile' src = '../img/profile1.jpg' alt = '이미지 안보여줌' >
-            <img id = 'profile' src = '../img/profile2.jpg' alt = '이미지 안보여줌' >
-            <img id = 'profile' src = '../img/profile3.jpg' alt = '이미지 안보여줌' >
+            <img class = 'profile' src = '../img/profile1.jpg' alt = '이미지 안보여줌' >
+            <img class = 'profile' src = '../img/profile2.jpg' alt = '이미지 안보여줌' >
+            <img class = 'profile' src = '../img/profile3.jpg' alt = '이미지 안보여줌' >
         </div>
         <div class = 'text'>
             <h2 class = 'header'>🤷‍♀️ 한 줄 소개</h2>
                 <div class = details>
-                    저는 <strong class = 'color_font'>Python</strong>으로 <strong class = 'color_font'>데이터 분석</strong>을 잘하는 <strong>최영준</strong>입니다. <a id = 'notion_link' href = 'https://ymjoon2.notion.site/27cc0a25eda3440d816f092a4a06e002' target="_blank"><strong>✅더 자세히 알아보기(Notion)✅</strong></a>
+                    저는 <strong class = 'color_font'>Python</strong>으로 <strong class = 'color_font'>데이터 분석</strong>을 잘하는 <strong>최영준</strong>입니다. <a id = 'notion_link' href = 'https://github.com/ZeroJoon2' target="_blank"><strong>✅더 자세히 알아보기(github)✅</strong></a>
                 </div>
             
             <h2 class = 'header'>🤷‍♀️ 현재 관심사</h2>
-                <ui class = 'bullet_changed_list'>
-                    <div class = 'details'>
+                <div class = 'details'>
+                    <ul class = 'bullet_changed_list'>
                         <li>python</li>
                         <li>데이터 분석</li>
                         <li>BI 시각화</li>
                         <li>통계</li>
-                    </div>
-                </ui>
+                    </ul>
+                </div>
+                
 
             <h2 class = 'header'>
                 🤷‍♀️ 인생 목표
